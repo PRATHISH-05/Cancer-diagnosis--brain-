@@ -1,295 +1,369 @@
-# 🧠 Brain Tumor MRI 4-Class Classifier
+# 🏥 Cancer Detection Platform
 
-A comprehensive deep learning project for multi-class brain tumor classification using MRI images.
+**AI-Powered Medical Imaging Analysis with Interactive React Frontend**
 
-## 📋 Project Overview
+Modern, full-stack web application for brain tumor and lung cancer detection using deep learning models with an intuitive, interactive user interface.
 
-### Dataset
-- **Classes**: Glioma, Meningioma, Pituitary, No Tumor (4-class classification)
-- **Input**: Brain MRI images (grayscale)
-- **Output**: Tumor type prediction with confidence score
-- **Task**: Multi-class image classification using CNN
+![Platform](https://img.shields.io/badge/Platform-Web-blue)
+![Frontend](https://img.shields.io/badge/Frontend-React-61DAFB)
+![Backend](https://img.shields.io/badge/Backend-Flask-000000)
+![ML](https://img.shields.io/badge/ML-TensorFlow-FF6F00)
 
-### Model Architecture
-- **Type**: Convolutional Neural Network (CNN)
-- **Input Shape**: 224×224×1 (grayscale)
-- **Architecture**: 4 Conv2D blocks → Flatten → Dense layers → Softmax output
-- **Total Parameters**: ~4.7M
-- **Output**: 4 neurons (one per class) with softmax activation
+## ✨ Features
 
-## 🗂️ Project Structure
+### 🧠 Brain Tumor Detection
+- Upload MRI scans
+- Detect 4 classes: **Glioma**, **Meningioma**, **Pituitary**, **No Tumor**
+- **93.29% accuracy** using custom CNN architecture
+- Real-time heatmap visualization
 
-```
-brain_tumor_classifier/
-│
-├── notebooks/
-│   └── main.ipynb                    ← Complete implementation with explanations
-│
-├── dataset/
-│   ├── glioma/                       ← Glioma tumor images
-│   ├── meningioma/                   ← Meningioma tumor images
-│   ├── pituitary/                    ← Pituitary tumor images
-│   └── no_tumor/                     ← Non-tumor (healthy) images
-│
-├── src/
-│   ├── data_loader.py               ← Data loading & generators
-│   ├── model.py                     ← CNN architecture definition
-│   ├── train.py                     ← Training loop & callbacks
-│   ├── evaluate.py                  ← Model evaluation & metrics
-│   └── utils.py                     ← Helper functions
-│
-├── outputs/
-│   ├── models/
-│   │   ├── brain_tumor_classifier.h5 ← Trained model (weights + architecture)
-│   │   └── model_summary.txt         ← Architecture details
-│   └── plots/
-│       ├── training_history.png      ← Loss & accuracy curves
-│       └── confusion_matrix.png      ← Confusion matrix visualization
-│
-├── requirements.txt                 ← Python dependencies
-└── README.md                        ← This file
-```
+### 🫁 Lung Cancer Detection  
+- Upload CT scans
+- Classify: **Normal**, **Benign**, **Malignant**
+- **99.36% recall** using ResNet50 transfer learning
+- High-sensitivity cancer detection
+
+### 🎨 Modern UI/UX
+- ✅ Drag & drop image upload
+- ✅ Real-time analysis with loading states
+- ✅ Interactive heatmap visualization
+- ✅ Fullscreen image viewer
+- ✅ Smooth animations and transitions
+- ✅ Mobile-responsive design
+- ✅ History tracking with statistics
+- ✅ Beautiful gradient themes
+
+### 📊 Analytics & History
+- Track all scans with timestamps
+- View confidence trends
+- Classification distribution charts
+- Export-ready results
 
 ## 🚀 Quick Start
 
-### 1. Installation
+### Prerequisites
+- Node.js 18+
+- Python 3.8+
+- 4GB+ RAM (for models)
 
+### Installation (Automated)
+
+**Windows PowerShell:**
+```powershell
+cd cancer
+.\setup.ps1
+```
+
+This will:
+1. ✅ Check prerequisites
+2. ✅ Install frontend dependencies
+3. ✅ Install backend dependencies
+4. ✅ Create Python virtual environment
+5. ✅ Verify installation
+
+### Running the Application
+
+**Option 1: Automated Start (Windows)**
+```powershell
+.\start.ps1
+```
+
+**Option 2: Manual Start**
+
+Terminal 1 - Backend:
 ```bash
-# Clone or download the project
-cd brain_tumor_classifier
+cd backend
+# Windows
+.\venv\Scripts\activate
+# Linux/Mac
+source venv/bin/activate
 
-# Install dependencies
-pip install -r requirements.txt
+python app.py
 ```
 
-### 2. Prepare Dataset
-
-Ensure your dataset is organized as:
-```
-dataset/
-├── glioma/
-│   ├── image1.jpg
-│   ├── image2.jpg
-│   └── ...
-├── meningioma/
-├── pituitary/
-└── no_tumor/
-```
-
-**Important**: Folder names MUST match class labels exactly (lowercase).
-
-### 3. Run the Notebook
-
+Terminal 2 - Frontend:
 ```bash
-jupyter notebook notebooks/main.ipynb
+cd frontend
+npm run dev
 ```
 
-The notebook contains:
-1. Data exploration & visualization
-2. Data augmentation setup
-3. Model architecture definition
-4. Training with monitoring
-5. Evaluation & metrics analysis
-6. Visualization of predictions
-7. Model saving for deployment
+**Open Browser:** http://localhost:3000
 
-## 📊 Key Features
+## 📁 Project Structure
 
-### Data Handling
-- ✅ Automatic label assignment from folder structure
-- ✅ Data augmentation (rotation, zoom, flip) for training only
-- ✅ Class weights to handle imbalance
-- ✅ Separate train/validation/test splits
-
-### Model Architecture
-- ✅ Progressive feature learning (edges → shapes → patterns)
-- ✅ Dropout regularization to prevent overfitting
-- ✅ Softmax activation for probability distribution
-- ✅ Optimized for medical image analysis
-
-### Training Strategy
-- ✅ Adam optimizer with adaptive learning rate
-- ✅ Early stopping to prevent overfitting
-- ✅ Class-weighted loss for imbalanced data
-- ✅ Batch normalization implicitly through training
-
-### Evaluation Metrics
-- ✅ **Recall (Primary)**: Catch all real tumors (medical safety)
-- ✅ Accuracy: Overall correctness
-- ✅ Precision: False alarm rate
-- ✅ F1-Score: Harmonic mean
-- ✅ Confusion Matrix: Identify confusions between classes
-- ✅ Per-class analysis: Know which tumors are hardest to detect
-
-## 🧠 Key Concepts Explained
-
-### Why CNNs Work for Medical Images
 ```
-Layer 1: Learns EDGES (boundaries between regions)
-    ↓
-Layer 2: Learns SHAPES (combinations of edges)
-    ↓
-Layer 3: Learns PATTERNS (tumor characteristics)
-    ↓
-Layer 4: Makes DECISION (which tumor type)
+cancer/
+├── frontend/                    # React Application
+│   ├── src/
+│   │   ├── components/         # Reusable UI components
+│   │   │   ├── Navbar.jsx
+│   │   │   └── ResultsVisualization.jsx
+│   │   ├── pages/              # Page components
+│   │   │   ├── Home.jsx
+│   │   │   ├── BrainDetection.jsx
+│   │   │   ├── LungDetection.jsx
+│   │   │   ├── History.jsx
+│   │   │   └── About.jsx
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   ├── package.json
+│   └── vite.config.js
+│
+├── backend/                     # Flask API
+│   ├── app.py                  # Main server
+│   └── requirements.txt
+│
+├── brain_tumor_classifier/      # Brain models & training
+│   └── outputs/models/
+│       └── brain_tumor_classifier.h5
+│
+├── Lung/                        # Lung models & training
+│   └── models/
+│       └── ct_cancer_resnet50_best.h5
+│
+├── setup.ps1                    # Automated setup script
+├── start.ps1                    # Quick start script
+├── SETUP_GUIDE.md              # Detailed setup guide
+└── README.md                    # This file
 ```
 
-### Data Augmentation Strategy
-- **Training**: Rotate, zoom, flip (create synthetic variations)
-- **Validation/Test**: No augmentation (real images only)
-- **Why**: Small medical datasets need augmentation to prevent overfitting
+## 🛠️ Tech Stack
 
-### Class Imbalance Handling
-- **Problem**: Model biases toward majority class
-- **Solution**: Compute class weights based on data distribution
-- **Impact**: Model pays more attention to minority classes
+### Frontend
+| Technology | Purpose |
+|------------|---------|
+| **React 18** | UI framework |
+| **Vite** | Build tool & dev server |
+| **Tailwind CSS** | Utility-first styling |
+| **Framer Motion** | Smooth animations |
+| **React Router** | Client-side routing |
+| **Axios** | HTTP client |
+| **React Dropzone** | File upload |
+| **Lucide React** | Icon library |
 
-### Recall vs Precision in Medical ML
-```
-Recall = "Did we catch all the real tumors?"
-    → False Negatives are CRITICAL (patient gets no treatment)
-    → Medical priority: Recall > Precision
+### Backend
+| Technology | Purpose |
+|------------|---------|
+| **Flask** | Web framework |
+| **TensorFlow/Keras** | Deep learning |
+| **OpenCV** | Image processing |
+| **NumPy** | Numerical operations |
+| **Pillow** | Image manipulation |
+| **Flask-CORS** | Cross-origin support |
 
-Precision = "How many predicted tumors were actually tumors?"
-    → False Positives are acceptable (unnecessary test)
-    → Better safe than sorry in diagnostics
-```
+## 🎯 API Endpoints
 
-## 📈 Training Configuration
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| `/api/health` | GET | Health check |
+| `/api/brain/detect` | POST | Brain tumor analysis |
+| `/api/lung/detect` | POST | Lung cancer analysis |
+| `/api/history/brain` | GET | Brain scan history |
+| `/api/history/lung` | GET | Lung scan history |
+| `/api/stats` | GET | Platform statistics |
 
-| Parameter | Value | Reasoning |
-|-----------|-------|-----------|
-| Image Size | 224×224 | Standard for CNNs (ImageNet pre-training) |
-| Batch Size | 32 | Balance between speed and gradient stability |
-| Epochs | 20 | Sufficient for convergence, Early Stopping prevents overfitting |
-| Learning Rate | 0.001 | Small steps, stable gradient updates |
-| Optimizer | Adam | Adaptive learning, works well with CNNs |
-| Loss Function | categorical_crossentropy | Multi-class classification |
-| Metrics | Accuracy, Recall | Accuracy for overall performance, Recall for medical safety |
+## 📸 Screenshots
 
-## 🔍 Evaluation Guidelines
+### Home Page
+Interactive landing page with system selection
 
-### Interpreting Results
+### Brain Detection
+- Drag & drop MRI upload
+- Real-time classification
+- Heatmap visualization
+- Confidence scores
 
-**Good Model Performance:**
-- Overall Accuracy: > 85%
-- Per-class Recall: > 80% for all classes
-- Confusion Matrix: Diagonal values dominate
-- No systematic confusions between classes
+### Lung Detection
+- CT scan analysis
+- Malignant/Benign/Normal classification
+- Clinical interpretation
+- Visual overlays
 
-**Warning Signs:**
-- Recall < 70% for any class (missed tumors!)
-- Large gap between training and validation accuracy (overfitting)
-- One class always confused with another
-- Low confidence scores across predictions
+### History
+- Scan tracking
+- Statistics dashboard
+- Classification analytics
 
-### When to Retrain
-- Recall drops below 75% for any class
-- New data introduced changes distribution
-- Model sees new scanner/MRI sequence type
-- Regulatory requirements update
+## 🔧 Configuration
 
-## 💾 Using the Saved Model
-
-### Load Model
+### Backend (`backend/app.py`)
 ```python
-from tensorflow.keras.models import load_model
-
-model = load_model('outputs/models/brain_tumor_classifier.h5')
+BRAIN_MODEL_PATH = "path/to/brain_model.h5"
+LUNG_MODEL_PATH = "path/to/lung_model.h5"
+PORT = 5000
 ```
 
-### Make Predictions
-```python
-from PIL import Image
-import numpy as np
-
-# Load image
-img = Image.open('sample_mri.jpg').convert('L')
-img_resized = img.resize((224, 224))
-img_array = np.array(img_resized) / 255.0
-img_batch = np.expand_dims(np.expand_dims(img_array, axis=0), axis=-1)
-
-# Predict
-predictions = model.predict(img_batch)
-predicted_class = np.argmax(predictions)
-confidence = np.max(predictions)
-
-# Get class name
-class_names = ['glioma', 'meningioma', 'notumor', 'pituitary']
-print(f"Predicted: {class_names[predicted_class]}")
-print(f"Confidence: {confidence:.2%}")
+### Frontend (`frontend/vite.config.js`)
+```javascript
+server: {
+  port: 3000,
+  proxy: {
+    '/api': 'http://localhost:5000'
+  }
+}
 ```
 
-## 🎓 Learning Outcomes
+## 📊 Model Performance
 
-After completing this project, you'll understand:
+### Brain Tumor Model
+- **Architecture:** Custom CNN
+- **Training Images:** 3,000+ MRI scans
+- **Accuracy:** 93.29%
+- **Classes:** 4 (Glioma, Meningioma, Pituitary, No Tumor)
 
-1. ✅ How CNNs learn hierarchical features
-2. ✅ Data augmentation for small datasets
-3. ✅ Handling class imbalance in medical ML
-4. ✅ Evaluation metrics for multi-class classification
-5. ✅ Why Recall matters in medical diagnosis
-6. ✅ How to prevent overfitting
-7. ✅ Model deployment and inference
-8. ✅ Confusion matrix interpretation
-9. ✅ Transfer learning basics
-10. ✅ Medical imaging best practices
+### Lung Cancer Model
+- **Architecture:** ResNet50 (Transfer Learning)
+- **Training Images:** 1,933 CT scans
+- **Recall:** 99.36% (cancer detection)
+- **Classes:** 3 (Normal, Benign, Malignant)
 
-## 🔬 Medical ML Best Practices Applied
+## 🚀 Building for Production
 
-| Practice | Implementation |
-|----------|----------------|
-| Recall Priority | Tracked per-class recall, used class weights |
-| Data Privacy | Folder structure supports HIPAA compliance |
-| Reproducibility | Fixed random seeds, saved models, training config |
-| Explainability | Confusion matrix, per-class metrics, prediction visualization |
-| Testing Strategy | Separate test set, no augmentation on test data |
-| Class Balance | Class weights computed from data distribution |
-| Monitoring | Early stopping, validation metrics tracked |
-| Documentation | Comprehensive inline comments and explanations |
+### Frontend
+```bash
+cd frontend
+npm run build
+# Output in dist/
+```
 
-## 🚨 Important Disclaimers
+### Backend
+```bash
+pip install gunicorn
+gunicorn -w 4 -b 0.0.0.0:5000 app:app
+```
 
-**This project is for educational purposes only!**
+### Deployment Options
+- **Frontend:** Netlify, Vercel, GitHub Pages
+- **Backend:** Heroku, AWS, Google Cloud, Azure
+- **Full Stack:** Docker, Kubernetes
 
-For clinical deployment:
-- ✓ Obtain proper regulatory approval (FDA 510(k))
-- ✓ Conduct clinical trials with radiologists
-- ✓ Implement uncertainty quantification
-- ✓ Add explainability features (GradCAM, etc.)
-- ✓ Establish continuous monitoring
-- ✓ Create incident response procedures
-- ✓ Ensure HIPAA/GDPR compliance
+## 🔒 Security & Privacy
 
-## 📚 Further Reading
+- ✅ Images processed in memory
+- ✅ No permanent data storage
+- ✅ CORS configured properly
+- ✅ No user authentication required
+- ⚠️ Not for production medical use
 
-- TensorFlow Documentation: https://tensorflow.org
-- Medical Image Analysis with Deep Learning (Goodfellow et al.)
-- Class Imbalance in Machine Learning (He & Garcia)
-- Interpretability in Medical AI (Caruana et al.)
+## ⚠️ Medical Disclaimer
+
+This platform is for **EDUCATIONAL AND RESEARCH PURPOSES ONLY**.
+
+**NOT intended for clinical use without:**
+- Regulatory approval (FDA, CE, etc.)
+- Clinical validation studies
+- Professional medical oversight
+- Integration with medical workflows
+- Proper risk management
+
+**Always consult qualified healthcare professionals for medical diagnosis and treatment.**
+
+## 🧪 Development
+
+### Adding New Features
+1. Create components in `frontend/src/components/`
+2. Add pages in `frontend/src/pages/`
+3. Update routing in `App.jsx`
+4. Add API endpoints in `backend/app.py`
+
+### Running Tests
+```bash
+# Frontend (if tests added)
+cd frontend
+npm test
+
+# Backend (if tests added)
+cd backend
+pytest
+```
+
+### Code Style
+- **Frontend:** ESLint + Prettier
+- **Backend:** Black + Flake8
+
+## 🐛 Troubleshooting
+
+### Port Already in Use
+```bash
+# Kill process on port 3000
+npx kill-port 3000
+
+# Kill process on port 5000
+npx kill-port 5000
+```
+
+### Model Loading Errors
+- Verify model file paths
+- Check TensorFlow version compatibility
+- Ensure sufficient RAM
+
+### CORS Issues
+- Verify Flask-CORS installed
+- Check proxy configuration in vite.config.js
+
+See [SETUP_GUIDE.md](SETUP_GUIDE.md) for more troubleshooting.
+
+## 📚 Documentation
+
+- [Setup Guide](SETUP_GUIDE.md) - Detailed installation instructions
+- [Frontend README](frontend/README.md) - Frontend documentation
+- [API Documentation](#-api-endpoints) - REST API reference
+
+## 🎓 Learning Resources
+
+- [React Documentation](https://react.dev)
+- [Flask Documentation](https://flask.palletsprojects.com)
+- [TensorFlow Guide](https://www.tensorflow.org/guide)
+- [Tailwind CSS](https://tailwindcss.com/docs)
 
 ## 🤝 Contributing
 
-Improvements and extensions:
-- [ ] Add transfer learning (pre-trained ImageNet)
-- [ ] Implement 3D CNN for volumetric data
-- [ ] Add uncertainty quantification (Bayesian)
-- [ ] Create web interface (Flask/Streamlit)
-- [ ] Generate saliency maps (GradCAM)
-- [ ] Integrate with hospital PACS
+Contributions are welcome! Please:
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
 
-## 📧 Contact & Support
+## 📝 License
 
-For questions or issues:
-- Review notebook comments for detailed explanations
-- Check confusion matrix for model behavior
-- Analyze per-class recall for failure modes
-- Test on edge cases (small tumors, artifacts)
+This project is for educational purposes. For commercial use, consult legal counsel and ensure regulatory compliance.
+
+## 🙏 Acknowledgments
+
+- Training data providers
+- Open-source community
+- Medical professionals who provided guidance
+- TensorFlow and React teams
+
+## 📞 Support
+
+For issues or questions:
+1. Check [SETUP_GUIDE.md](SETUP_GUIDE.md)
+2. Review [Issues](#) section
+3. Consult documentation
+4. Contact maintainers
+
+## 🎯 Roadmap
+
+- [ ] PDF report generation
+- [ ] Multi-language support
+- [ ] Advanced analytics
+- [ ] Batch processing
+- [ ] User authentication
+- [ ] Database integration
+- [ ] Mobile app
+- [ ] DICOM file support
+- [ ] 3D visualization
+- [ ] Clinical trial mode
+
+## 🌟 Star History
+
+If you find this project helpful, please consider giving it a star! ⭐
 
 ---
 
-**Remember**: In medical ML, safety and interpretability come before accuracy.
+**Built with ❤️ for advancing medical AI research**
 
-"Clean folders = clean thinking = clean interviews." 🎯
+**Version:** 2.0.0 (React Frontend)  
+**Last Updated:** 2026
 
-Built with ❤️ for educational excellence.

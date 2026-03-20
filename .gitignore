@@ -1,0 +1,68 @@
+# Dependencies
+node_modules/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Build outputs
+frontend/dist/
+frontend/build/
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Temporary files
+temp_uploads/
+detection_history/
+*.log
+*.tmp
+
+# Model files (large)
+*.h5
+*.pb
+*.ckpt
+
+# Data files
+*.csv
+*.json
+!package.json
+!package-lock.json
+
+# OS
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Test coverage
+coverage/
+.coverage
+htmlcov/
+
+# Cache
+.cache/
+.pytest_cache/
+.mypy_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Reports
+reports/*.pdf
+reports/*.png
