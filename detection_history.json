@@ -1,0 +1,254 @@
+[
+    {
+        "image": "Tr-me_0972.jpg",
+        "tumor_type": "Meningioma",
+        "confidence": 99.34,
+        "timestamp": "2026-01-23 21:56:16"
+    },
+    {
+        "image": "Tr-gl_0359.jpg",
+        "tumor_type": "Glioma",
+        "confidence": 89.4,
+        "timestamp": "2026-01-23 21:56:52"
+    },
+    {
+        "image": "1358.jpg",
+        "tumor_type": "Meningioma",
+        "confidence": 99.63,
+        "timestamp": "2026-01-23 22:23:50"
+    },
+    {
+        "image": "1358.jpg",
+        "tumor_type": "Meningioma",
+        "confidence": 99.63,
+        "timestamp": "2026-01-23 22:24:01"
+    },
+    {
+        "image": "Tr-gl_1269.jpg",
+        "tumor_type": "Glioma",
+        "confidence": 67.85,
+        "timestamp": "2026-01-23 22:30:50"
+    },
+    {
+        "image": "Tr-gl_1269.jpg",
+        "tumor_type": "Glioma",
+        "confidence": 67.85,
+        "timestamp": "2026-01-23 22:31:00"
+    },
+    {
+        "image": "G_86_SP_.jpg",
+        "tumor_type": "Glioma",
+        "confidence": 98.44,
+        "timestamp": "2026-01-23 22:35:10"
+    },
+    {
+        "image": "1299.jpg",
+        "tumor_type": "Meningioma",
+        "confidence": 99.87,
+        "timestamp": "2026-01-23 23:29:35",
+        "Glioma%": 0.13,
+        "Meningioma%": 99.87,
+        "No Tumor%": 0.0,
+        "Pituitary%": 0.0
+    },
+    {
+        "image": "1299.jpg",
+        "tumor_type": "Meningioma",
+        "confidence": 99.87,
+        "timestamp": "2026-01-23 23:29:48",
+        "Glioma%": 0.13,
+        "Meningioma%": 99.87,
+        "No Tumor%": 0.0,
+        "Pituitary%": 0.0
+    },
+    {
+        "image": "1299.jpg",
+        "tumor_type": "Meningioma",
+        "confidence": 99.87,
+        "timestamp": "2026-01-23 23:29:53",
+        "Glioma%": 0.13,
+        "Meningioma%": 99.87,
+        "No Tumor%": 0.0,
+        "Pituitary%": 0.0
+    },
+    {
+        "image": "1299.jpg",
+        "tumor_type": "Meningioma",
+        "confidence": 99.87,
+        "timestamp": "2026-01-23 23:30:28",
+        "Glioma%": 0.13,
+        "Meningioma%": 99.87,
+        "No Tumor%": 0.0,
+        "Pituitary%": 0.0
+    },
+    {
+        "image": "1299.jpg",
+        "tumor_type": "Meningioma",
+        "confidence": 99.87,
+        "timestamp": "2026-01-23 23:30:39",
+        "Glioma%": 0.13,
+        "Meningioma%": 99.87,
+        "No Tumor%": 0.0,
+        "Pituitary%": 0.0
+    },
+    {
+        "image": "Normal case (182).jpg",
+        "tumor_type": "No Tumor",
+        "confidence": 48.26,
+        "timestamp": "2026-01-24 06:26:59",
+        "Glioma%": 12.4,
+        "Meningioma%": 38.63,
+        "No Tumor%": 48.26,
+        "Pituitary%": 0.71
+    },
+    {
+        "image": "1151.jpg",
+        "tumor_type": "Glioma",
+        "confidence": 98.89,
+        "timestamp": "2026-01-24 09:44:25",
+        "Glioma%": 98.89,
+        "Meningioma%": 0.27,
+        "No Tumor%": 0.0,
+        "Pituitary%": 0.84
+    },
+    {
+        "image": "1151.jpg",
+        "tumor_type": "Glioma",
+        "confidence": 98.89,
+        "timestamp": "2026-01-24 09:44:56",
+        "Glioma%": 98.89,
+        "Meningioma%": 0.27,
+        "No Tumor%": 0.0,
+        "Pituitary%": 0.84
+    },
+    {
+        "image": "1151.jpg",
+        "tumor_type": "Glioma",
+        "confidence": 98.89,
+        "timestamp": "2026-01-24 09:45:02",
+        "Glioma%": 98.89,
+        "Meningioma%": 0.27,
+        "No Tumor%": 0.0,
+        "Pituitary%": 0.84
+    },
+    {
+        "image": "1189.jpg",
+        "tumor_type": "Glioma",
+        "confidence": 99.99,
+        "timestamp": "2026-01-24 09:58:25",
+        "Glioma%": 99.99,
+        "Meningioma%": 0.01,
+        "No Tumor%": 0.0,
+        "Pituitary%": 0.0
+    },
+    {
+        "image": "1129.jpg",
+        "tumor_type": "Glioma",
+        "confidence": 100.0,
+        "timestamp": "2026-01-24 09:58:52",
+        "Glioma%": 100.0,
+        "Meningioma%": 0.0,
+        "No Tumor%": 0.0,
+        "Pituitary%": 0.0
+    },
+    {
+        "image": "1129.jpg",
+        "tumor_type": "Glioma",
+        "confidence": 100.0,
+        "timestamp": "2026-01-24 09:59:09",
+        "Glioma%": 100.0,
+        "Meningioma%": 0.0,
+        "No Tumor%": 0.0,
+        "Pituitary%": 0.0
+    },
+    {
+        "image": "1129.jpg",
+        "tumor_type": "Glioma",
+        "confidence": 100.0,
+        "timestamp": "2026-01-24 09:59:34",
+        "Glioma%": 100.0,
+        "Meningioma%": 0.0,
+        "No Tumor%": 0.0,
+        "Pituitary%": 0.0
+    },
+    {
+        "image": "1129.jpg",
+        "tumor_type": "Glioma",
+        "confidence": 100.0,
+        "timestamp": "2026-01-24 10:01:17",
+        "Glioma%": 100.0,
+        "Meningioma%": 0.0,
+        "No Tumor%": 0.0,
+        "Pituitary%": 0.0
+    },
+    {
+        "image": "1129.jpg",
+        "tumor_type": "Glioma",
+        "confidence": 100.0,
+        "timestamp": "2026-01-24 10:01:32",
+        "Glioma%": 100.0,
+        "Meningioma%": 0.0,
+        "No Tumor%": 0.0,
+        "Pituitary%": 0.0
+    },
+    {
+        "image": "42 no.jpg",
+        "tumor_type": "No Tumor",
+        "confidence": 100.0,
+        "timestamp": "2026-01-27 13:39:04",
+        "Glioma%": 0.0,
+        "Meningioma%": 0.0,
+        "No Tumor%": 100.0,
+        "Pituitary%": 0.0
+    },
+    {
+        "image": "MRI_of_Human_Brain.jpg",
+        "tumor_type": "No Tumor",
+        "confidence": 60.62,
+        "timestamp": "2026-01-27 13:41:56",
+        "Glioma%": 10.76,
+        "Meningioma%": 27.61,
+        "No Tumor%": 60.62,
+        "Pituitary%": 1.01
+    },
+    {
+        "image": "1180.jpg",
+        "tumor_type": "Pituitary",
+        "confidence": 99.03,
+        "timestamp": "2026-02-07 10:38:33",
+        "Glioma%": 0.11,
+        "Meningioma%": 0.86,
+        "No Tumor%": 0.0,
+        "Pituitary%": 99.03
+    },
+    {
+        "image": "1049.jpg",
+        "tumor_type": "Glioma",
+        "confidence": 99.98,
+        "timestamp": "2026-02-07 11:04:10",
+        "Glioma%": 99.98,
+        "Meningioma%": 0.02,
+        "No Tumor%": 0.0,
+        "Pituitary%": 0.0
+    },
+    {
+        "image": "1049.jpg",
+        "tumor_type": "Glioma",
+        "confidence": 99.98,
+        "timestamp": "2026-02-07 11:14:42",
+        "Glioma%": 99.98,
+        "Meningioma%": 0.02,
+        "No Tumor%": 0.0,
+        "Pituitary%": 0.0
+    },
+    {
+        "image": "1049.jpg",
+        "tumor_type": "Glioma",
+        "confidence": 99.98,
+        "timestamp": "2026-02-07 11:14:47",
+        "Glioma%": 99.98,
+        "Meningioma%": 0.02,
+        "No Tumor%": 0.0,
+        "Pituitary%": 0.0
+    }
+]

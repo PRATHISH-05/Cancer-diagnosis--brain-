@@ -1,0 +1,162 @@
+[
+    {
+        "image": "Malignant (619).JPG",
+        "classification": "Malignant",
+        "confidence": 84.25,
+        "timestamp": "2026-01-23 23:31:41",
+        "Normal/Benign%": 15.75,
+        "Malignant%": 84.25
+    },
+    {
+        "image": "Malignant (619).JPG",
+        "classification": "Malignant",
+        "confidence": 84.25,
+        "timestamp": "2026-01-23 23:31:55",
+        "Normal/Benign%": 15.75,
+        "Malignant%": 84.25
+    },
+    {
+        "image": "Malignant (619).JPG",
+        "classification": "Malignant",
+        "confidence": 84.25,
+        "timestamp": "2026-01-23 23:31:59",
+        "Normal/Benign%": 15.75,
+        "Malignant%": 84.25
+    },
+    {
+        "image": "Malignant (774).JPG",
+        "classification": "Normal/Benign",
+        "confidence": 63.98,
+        "timestamp": "2026-01-23 23:32:32",
+        "Normal/Benign%": 63.98,
+        "Malignant%": 36.02
+    },
+    {
+        "image": "Malignant (9).JPG",
+        "classification": "Malignant",
+        "confidence": 98.83,
+        "timestamp": "2026-01-23 23:32:39",
+        "Normal/Benign%": 1.17,
+        "Malignant%": 98.83
+    },
+    {
+        "image": "Malignant (1).JPG",
+        "classification": "Malignant",
+        "confidence": 60.71,
+        "timestamp": "2026-01-23 23:32:46",
+        "Normal/Benign%": 39.29,
+        "Malignant%": 60.71
+    },
+    {
+        "image": "Malignant (2).JPG",
+        "classification": "Normal/Benign",
+        "confidence": 41.77,
+        "timestamp": "2026-01-23 23:32:51",
+        "Normal/Benign%": 41.77,
+        "Malignant%": 58.23
+    },
+    {
+        "image": "Malignant (3).JPG",
+        "classification": "Normal/Benign",
+        "confidence": 40.31,
+        "timestamp": "2026-01-23 23:32:56",
+        "Normal/Benign%": 40.31,
+        "Malignant%": 59.69
+    },
+    {
+        "image": "Malignant (4).JPG",
+        "classification": "Malignant",
+        "confidence": 60.47,
+        "timestamp": "2026-01-23 23:33:04",
+        "Normal/Benign%": 39.53,
+        "Malignant%": 60.47
+    },
+    {
+        "image": "Benign (27).JPG",
+        "classification": "Malignant",
+        "confidence": 72.63,
+        "timestamp": "2026-01-23 23:33:13",
+        "Normal/Benign%": 27.37,
+        "Malignant%": 72.63
+    },
+    {
+        "image": "Benign (9).JPG",
+        "classification": "Malignant",
+        "confidence": 69.8,
+        "timestamp": "2026-01-23 23:33:20",
+        "Normal/Benign%": 30.2,
+        "Malignant%": 69.8
+    },
+    {
+        "image": "Benign (444).JPG",
+        "classification": "Normal/Benign",
+        "confidence": 44.54,
+        "timestamp": "2026-01-23 23:33:34",
+        "Normal/Benign%": 44.54,
+        "Malignant%": 55.46
+    },
+    {
+        "image": "Normal case (269).jpg",
+        "classification": "Normal/Benign",
+        "confidence": 100.0,
+        "timestamp": "2026-01-23 23:34:06",
+        "Normal/Benign%": 100.0,
+        "Malignant%": 0.0
+    },
+    {
+        "image": "Normal case (340).jpg",
+        "classification": "Normal/Benign",
+        "confidence": 100.0,
+        "timestamp": "2026-01-23 23:34:22",
+        "Normal/Benign%": 100.0,
+        "Malignant%": 0.0
+    },
+    {
+        "image": "Benign (1).JPG",
+        "classification": "Normal/Benign",
+        "confidence": 40.59,
+        "timestamp": "2026-01-23 23:34:29",
+        "Normal/Benign%": 40.59,
+        "Malignant%": 59.41
+    },
+    {
+        "image": "Normal case (1).jpg",
+        "classification": "Normal/Benign",
+        "confidence": 100.0,
+        "timestamp": "2026-01-23 23:34:42",
+        "Normal/Benign%": 100.0,
+        "Malignant%": 0.0
+    },
+    {
+        "image": "Malignant (1).JPG",
+        "classification": "Malignant",
+        "confidence": 60.71,
+        "timestamp": "2026-01-24 10:03:36",
+        "Normal/Benign%": 39.29,
+        "Malignant%": 60.71
+    },
+    {
+        "image": "Malignant (1).JPG",
+        "classification": "Malignant",
+        "confidence": 60.71,
+        "timestamp": "2026-01-24 10:04:00",
+        "Normal/Benign%": 39.29,
+        "Malignant%": 60.71
+    },
+    {
+        "image": "Malignant (1).JPG",
+        "classification": "Malignant",
+        "confidence": 60.71,
+        "timestamp": "2026-01-24 10:04:04",
+        "Normal/Benign%": 39.29,
+        "Malignant%": 60.71
+    },
+    {
+        "image": "Malignant (1).JPG",
+        "classification": "Malignant",
+        "confidence": 60.71,
+        "timestamp": "2026-01-24 10:04:14",
+        "Normal/Benign%": 39.29,
+        "Malignant%": 60.71
+    }
+]
